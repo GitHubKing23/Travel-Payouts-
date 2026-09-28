@@ -1,94 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TravelPals travel deals and inspiration.">
-  <title>TravelPals | Explore. Book. Travel.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ajoa Travel and Tour deals and inspiration.">
+    <title>Ajoa Travel and Tour | Explore. Book. Travel.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home"><span class="brand-mark">☀</span>TravelPals</a>
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#search">Flights</a><a href="#hotels">Hotels</a><a href="#destinations">Destinations</a><a href="#why">Travel Tips</a><a href="#about">About</a>
-    </nav>
-    <a class="button header-button" href="#search">Search Deals</a>
-  </header>
+    <header class="site-header">
+        <a class="brand" href="#home"><span class="brand-mark">✈</span>Ajoa Travel & Tour</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#search">Flights</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#why">Travel Tips</a>
+            <a href="#about">About</a>
+        </nav>
+        <a class="button header-button" href="#search">Search Deals</a>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">EXPLORE. BOOK. TRAVEL.</p>
-        <h1>Your Next Adventure Awaits</h1>
-        <p class="hero-copy">Discover unforgettable destinations, compare travel options, and plan your next getaway with TravelPals.</p>
-      </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">EXPLORE. BOOK. TRAVEL.</p>
+                <h1>Your Next Adventure Awaits</h1>
+                <p class="hero-copy">Discover unforgettable destinations, compare travel options, and plan your next getaway with Ajoa Travel and Tour.</p>
+            </div>
+            <div class="search-card" id="search">
+                <div class="tabs" role="tablist">
+                    <button class="tab active" data-tab="flights">✈ Flights</button>
+                    <button class="tab" data-tab="hotels">▣ Hotels</button>
+                    <button class="tab" data-tab="packages">◉ Packages</button>
+                </div>
+                <form class="search-grid" id="travel-search">
+                    <label>From<input type="text" placeholder="Toronto (YYZ)"></label>
+                    <label>To<input type="text" placeholder="Where to?"></label>
+                    <label>Depart<input type="date"></label>
+                    <label>Return<input type="date"></label>
+                    <label>Travelers<select><option>1 Traveler</option><option>2 Travelers</option><option>3 Travelers</option><option>4 Travelers</option></select></label>
+                    <button class="button search-button" type="submit">Search</button>
+                </form>
+                <p class="integration-note" id="integration-note">Travelpayouts affiliate integration is enabled on this site.</p>
+            </div>
+        </section>
 
-      <div class="search-card" id="search">
-        <div class="tabs" role="tablist">
-          <button class="tab active" data-tab="flights">✈ Flights</button>
-          <button class="tab" data-tab="hotels">▣ Hotels</button>
-          <button class="tab" data-tab="packages">◉ Packages</button>
-        </div>
-        <form class="search-grid" id="travel-search">
-          <label>From<input type="text" placeholder="Toronto (YYZ)"></label>
-          <label>To<input type="text" placeholder="Where to?"></label>
-          <label>Depart<input type="date"></label>
-          <label>Return<input type="date"></label>
-          <label>Travelers<select><option>1 Traveler</option><option>2 Travelers</option><option>3 Travelers</option><option>4 Travelers</option></select></label>
-          <button class="button search-button" type="submit">Search</button>
-        </form>
-        <p class="integration-note" id="integration-note">Travelpayouts affiliate integration is enabled on this site.</p>
-      </div>
-    </section>
+        <section class="section" id="destinations">
+            <div class="section-heading">
+                <p class="eyebrow dark">GET INSPIRED</p>
+                <h2>Popular Destinations</h2>
+                <p>Dream-worthy places for your next escape.</p>
+            </div>
+            <div class="destination-grid">
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80" alt="Bali tropical landscape">
+                    <div><h3>Bali</h3><p>Indonesia</p></div>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80" alt="Santorini coastal village">
+                    <div><h3>Santorini</h3><p>Greece</p></div>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" alt="Eiffel Tower in Paris">
+                    <div><h3>Paris</h3><p>France</p></div>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80" alt="Maldives overwater villas">
+                    <div><h3>Maldives</h3><p>Indian Ocean</p></div>
+                </article>
+            </div>
+        </section>
 
-    <section class="section" id="destinations">
-      <div class="section-heading"><p class="eyebrow dark">GET INSPIRED</p><h2>Popular Destinations</h2><p>Dream-worthy places for your next escape.</p></div>
-      <div class="destination-grid">
-        <article class="destination-card"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80" alt="Bali tropical landscape"><div><h3>Bali</h3><p>Indonesia</p></div></article>
-        <article class="destination-card"><img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80" alt="Santorini coastal village"><div><h3>Santorini</h3><p>Greece</p></div></article>
-        <article class="destination-card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" alt="Eiffel Tower in Paris"><div><h3>Paris</h3><p>France</p></div></article>
-        <article class="destination-card"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80" alt="Maldives overwater villas"><div><h3>Maldives</h3><p>Indian Ocean</p></div></article>
-      </div>
-    </section>
+        <section class="section benefits" id="why">
+            <div class="section-heading">
+                <p class="eyebrow dark">TRAVEL SMARTER</p>
+                <h2>Why Travel with Ajoa Travel and Tour?</h2>
+            </div>
+            <div class="benefit-grid">
+                <article><span>◇</span><h3>Best Deals</h3><p>Compare options and find travel offers that fit your plans.</p></article>
+                <article><span>✓</span><h3>Trusted Partners</h3><p>Connect with established travel booking partners.</p></article>
+                <article><span>⌁</span><h3>Easy Booking</h3><p>Move from inspiration to booking with fewer steps.</p></article>
+                <article><span>✦</span><h3>Travel Inspiration</h3><p>Explore destinations and ideas for your next adventure.</p></article>
+            </div>
+        </section>
 
-    <section class="section benefits" id="why">
-      <div class="section-heading"><p class="eyebrow dark">TRAVEL SMARTER</p><h2>Why Travel with TravelPals?</h2></div>
-      <div class="benefit-grid">
-        <article><span>◇</span><h3>Best Deals</h3><p>Compare options and find travel offers that fit your plans.</p></article>
-        <article><span>✓</span><h3>Trusted Partners</h3><p>Connect with established travel booking partners.</p></article>
-        <article><span>⌁</span><h3>Easy Booking</h3><p>Move from inspiration to booking with fewer steps.</p></article>
-        <article><span>✦</span><h3>Travel Inspiration</h3><p>Explore destinations and ideas for your next adventure.</p></article>
-      </div>
-    </section>
+        <section class="section" id="hotels">
+            <div class="section-heading">
+                <p class="eyebrow dark">STAY SOMEWHERE SPECIAL</p>
+                <h2>Featured Hotel Inspiration</h2>
+                <p>Sample cards for the design preview. Live inventory and pricing will come from the travel integration.</p>
+            </div>
+            <div class="hotel-grid">
+                <article class="hotel-card">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80" alt="Tropical luxury resort">
+                    <div class="hotel-body"><p class="rating">★ 4.9</p><h3>Tropical Retreat</h3><p>Bali, Indonesia</p><strong>Live pricing coming soon</strong></div>
+                </article>
+                <article class="hotel-card">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80" alt="Coastal hotel">
+                    <div class="hotel-body"><p class="rating">★ 4.8</p><h3>Cliffside Escape</h3><p>Santorini, Greece</p><strong>Live pricing coming soon</strong></div>
+                </article>
+                <article class="hotel-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Elegant hotel exterior">
+                    <div class="hotel-body"><p class="rating">★ 4.7</p><h3>City Boutique Stay</h3><p>Paris, France</p><strong>Live pricing coming soon</strong></div>
+                </article>
+            </div>
+        </section>
 
-    <section class="section" id="hotels">
-      <div class="section-heading"><p class="eyebrow dark">STAY SOMEWHERE SPECIAL</p><h2>Featured Hotel Inspiration</h2><p>Sample cards for the design preview. Live inventory and pricing will come from the travel integration.</p></div>
-      <div class="hotel-grid">
-        <article class="hotel-card"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80" alt="Tropical luxury resort"><div class="hotel-body"><p class="rating">★ 4.9</p><h3>Tropical Retreat</h3><p>Bali, Indonesia</p><strong>Live pricing coming soon</strong></div></article>
-        <article class="hotel-card"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80" alt="Coastal hotel"><div class="hotel-body"><p class="rating">★ 4.8</p><h3>Cliffside Escape</h3><p>Santorini, Greece</p><strong>Live pricing coming soon</strong></div></article>
-        <article class="hotel-card"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Elegant hotel exterior"><div class="hotel-body"><p class="rating">★ 4.7</p><h3>City Boutique Stay</h3><p>Paris, France</p><strong>Live pricing coming soon</strong></div></article>
-      </div>
-    </section>
+        <section class="cta" id="about">
+            <div>
+                <p class="eyebrow">YOUR TRIP STARTS HERE</p>
+                <h2>Ready for Your Next Getaway?</h2>
+                <p>Explore the world with Ajoa Travel and Tour and turn your next idea into an adventure.</p>
+                <a class="button light-button" href="#search">Start Searching</a>
+            </div>
+        </section>
+    </main>
 
-    <section class="cta" id="about"><div><p class="eyebrow">YOUR TRIP STARTS HERE</p><h2>Ready for Your Next Getaway?</h2><p>Explore the world with TravelPals and turn your next idea into an adventure.</p><a class="button light-button" href="#search">Start Searching</a></div></section>
-  </main>
+    <footer>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">✈</span>Ajoa Travel & Tour</a>
+        <p>Travel inspiration and booking tools in one place.</p>
+        <p>© <span id="year"></span> Ajoa Travel & Tour. All rights reserved.</p>
+    </footer>
 
-  <footer><a class="brand footer-brand" href="#home">TravelPals</a><p>Travel inspiration and booking tools in one place.</p><p>© <span id="year"></span> TravelPals.</p></footer>
-  <script src="script.js"></script>
-  <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.setAttribute("data-cmp-ab", "2");
-      script.src = "https://emrldtp.cc/NTc2OTYy.js?t=576962";
-      document.head.appendChild(script);
-    })();
-  </script>
+    <script src="script.js"></script>
+    <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+        (function () {var script = document.createElement("script"); script.async = 1; script.setAttribute("data-cmp-ab", "2"); script.src = "https://emrldtp.cc/NTc2OTYy.js?t=576962"; document.head.appendChild(script); })();
+    </script>
 </body>
 </html>
