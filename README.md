@@ -10,19 +10,12 @@ Use the link above to preview the latest deployed version of the site. Changes p
 
 ## Project Files
 
-- `index.html` — website structure and content
+- `index.html` — website structure, content, and Travelpayouts affiliate integration
 - `styles.css` — layout, responsive design, and visual styling
 - `script.js` — navigation and interactive behavior
 
 ## Travelpayouts Integration
 
-The live Travelpayouts affiliate/search widget is not yet connected. The site contains a placeholder for the official widget code. Do not commit private API keys or secrets to this public repository.
-xthis is travel link EXPEDIA   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-  (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.setAttribute("data-cmp-ab","2");
-      script.src = 'https://emrldtp.cc/NTc2OTYy.js?t=576962';
-      document.head.appendChild(script);
-  })();
-</script>
+The Travelpayouts Expedia affiliate script supplied from the Travelpayouts dashboard has been integrated into the website. The raw script is kept in the website code rather than duplicated in this README.
+
+Do not commit private API keys, passwords, or other secrets to this public repository.
